@@ -42,7 +42,24 @@ function City() {
       <div className={styles.row}>
         <h6>City name</h6>
         <h3>
-          <span>{emoji}</span> {cityName}
+          <span>
+            {emoji === "🇵🇹" ? (
+              <img src={`https://flagcdn.com/24x18/pt.png`} alt="flag" />
+            ) : (
+              ""
+            )}
+            {emoji === "🇪🇸" ? (
+              <img src={`https://flagcdn.com/24x18/es.png`} alt="flag" />
+            ) : (
+              ""
+            )}
+            {emoji === "🇩🇪" ? (
+              <img src={`https://flagcdn.com/24x18/de.png`} alt="flag" />
+            ) : (
+              ""
+            )}
+          </span>
+          {cityName}
         </h3>
       </div>
 
